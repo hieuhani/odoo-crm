@@ -5,7 +5,7 @@
       <b-nav-item>Tasks</b-nav-item>
       <b-nav-item v-bind:to="'/customers'">Customers</b-nav-item>
       <b-nav-item>Organizations</b-nav-item>
-      <b-nav-item>TaProjectssks</b-nav-item>
+      <b-nav-item>Projects</b-nav-item>
     </b-nav>
   </div>
 </template>
