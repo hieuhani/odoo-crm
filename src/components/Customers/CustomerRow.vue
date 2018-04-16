@@ -1,7 +1,10 @@
 <template>
   <router-link :to="`/customers/${this.customer.id}`" class="customer-row">
     <div class="image">
-      <img v-if="this.customer.image_small" :src="`data:image/png;base64,${this.customer.image_small}`" />
+      <img
+        v-if="this.customer.image_small"
+        :src="`data:image/png;base64,${this.customer.image_small}`"
+      />
       <img v-else src="http://meeconline.com/wp-content/uploads/2014/08/placeholder-300x300.png" />
     </div>
     <div class="details">
@@ -15,7 +18,7 @@
 <script>
 export default {
   props: [
-    'customer'
+    'customer',
   ],
 }
 </script>

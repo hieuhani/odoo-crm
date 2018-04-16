@@ -1,7 +1,11 @@
 <template>
   <split-view>
     <template slot="list">
-      <customer-row v-for="customer in this.customers" :customer="customer" v-bind:key="customer.id" />
+      <customer-row
+        v-for="customer in this.customers"
+        :customer="customer"
+        v-bind:key="customer.id"
+      />
     </template>
     <template slot="main">
       <router-view />

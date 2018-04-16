@@ -10,7 +10,11 @@
           <div class="col-4">
             <info-line property="Address" :value="this.customer.street" />
             <info-line property="City" :value="`${this.customer.city} ${this.customer.zip}`" />
-            <info-line v-if="this.customer.country_id" property="Country" :value="this.customer.country_id[1]" />
+            <info-line
+              v-if="this.customer.country_id"
+              property="Country"
+              :value="this.customer.country_id[1]"
+            />
           </div>
           <div class="col-4">
             <info-line property="Phone" :value="this.customer.phone" />

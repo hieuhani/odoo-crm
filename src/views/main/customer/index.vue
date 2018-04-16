@@ -19,6 +19,6 @@ export default {
   }),
   created() {
     this.$store.dispatch('customer/fetchCustomer', this.$route.params.id)
-  }
+  },
 }
 </script>
