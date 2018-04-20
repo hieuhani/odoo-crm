@@ -20,5 +20,12 @@ export default {
   created() {
     this.$store.dispatch('customer/fetchCustomer', this.$route.params.id)
   },
+  watch:{
+    $route (to, from) {
+      if (to.params.id !== from.params.id) {
+        this.$store.dispatch('customer/fetchCustomer', to.params.id)
+      }
+    }
+  }
 }
 </script>

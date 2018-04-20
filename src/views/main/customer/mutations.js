@@ -5,6 +5,10 @@ const mutations = {
   setCustomerContacts(state, contacts) {
     state.contacts = contacts
   },
+  clearCustomer(state) {
+    state.customer = {}
+    state.contacts = []
+  },
 }
 
 export default mutations

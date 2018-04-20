@@ -2,6 +2,7 @@
 import odoo from '@/odoo'
 
 export function fetchCustomer({ commit }, payload) {
+  commit('clearCustomer')
   odoo.query({
     method: 'read',
     model: 'res.partner',
@@ -86,3 +87,4 @@ export function fetchCustomerContact({ commit }, payload) {
     commit('setCustomerContacts', data.result)
   })
 }
+
